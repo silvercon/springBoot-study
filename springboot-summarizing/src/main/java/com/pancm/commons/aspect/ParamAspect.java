@@ -18,7 +18,7 @@ import org.springframework.stereotype.Component;
 public class ParamAspect {
 
 	
-	@Before("execution(public * com.pancm.web.*.*(..))")
+	@Before("execution(public * com.pancm.controller.*.*(..))")
     public void deBefore(JoinPoint joinPoint) throws Throwable {
 		Object[] params= joinPoint.getArgs();
 		for (int i = 0; i < params.length; i++) {

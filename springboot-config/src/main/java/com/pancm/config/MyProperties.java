@@ -15,7 +15,7 @@ import org.springframework.stereotype.Component;
  */
 //表示这个类是获取配置文件
 @Component
-@ConfigurationProperties(prefix = "web.pancm")//前缀  
+@ConfigurationProperties(prefix = "controller.pancm")//前缀
 public class MyProperties {
 	/**
 	 * 获取个人标题

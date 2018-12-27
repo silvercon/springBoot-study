@@ -1,18 +1,13 @@
-package com.pancm.web;
-
-import java.util.List;
-
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+package com.pancm.controller;
 
 import com.pancm.config.ApplicationConfiguration;
 import com.pancm.kafka.KafkaProducerUtil;
 import com.pancm.pojo.User;
 import com.pancm.service.UserService;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.*;
+
+import java.util.List;
 
 
 /**
